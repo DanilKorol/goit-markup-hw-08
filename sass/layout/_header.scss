@@ -1,0 +1,100 @@
+.header {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    border-bottom: 1px solid var(--border-cl);
+
+    &__container {
+            display: flex;
+            align-items: center;
+        }
+
+    &__contact-list {
+        @include mq(mob-only) {
+            margin-bottom: 64px;
+        }
+
+        @include mq(tab-only) {
+            margin-left: auto;
+            font-size: 12px;
+            line-height: calc(14 / 12);
+        }
+
+        @include mq(desk) {
+            display: flex;
+            gap: 50px;
+            margin-left: auto;
+            font-size: 14px;
+            line-height: calc(16 / 14);
+            align-items: center;
+        }
+            // display: flex;
+            // align-items: center;
+            // gap: 50px;
+            // margin-left: auto;
+                }
+
+    &__item:first-child {
+
+        @include mq(mob-only) {
+            margin-bottom: 32px;
+            font-size: 34px;
+            line-height: calc(40 / 34);
+        }
+
+        @include mq(tab-only) {
+            margin-bottom: 10px;
+        }
+    }            
+     
+    &__item:last-child {
+
+        @include mq(mob-only) {
+            font-size: 24px;
+            line-height: calc(28 / 24);
+        }
+    }
+
+    &__contact-link {
+           
+         transition: color var(--animation);
+
+            @include mq(tab-only) {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            @include mq(desk) {
+                display: flex;
+                position: relative;
+                align-items: center;
+                padding-top: 32px;
+                padding-bottom: 32px;
+            }
+                }
+        
+        
+    &__logo {
+            margin-right: 93px;
+                }
+        
+    &__contact-link:hover,
+    &__contact-link:focus {
+            color: var(--accent-cl);
+                }
+        
+    &__icon {
+            margin-right: 10px;
+            fill: currentColor;
+                }
+}
+
+.menu {
+    @include mq(mob-only) {
+        display: none;
+    }
+}
+
+

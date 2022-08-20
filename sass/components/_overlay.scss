@@ -1,0 +1,47 @@
+.overlay {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: var(--hero-gradient),
+        url(../images/hero/hero-sm.jpg);
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: var(--hero-gradient),
+             url(../images/hero/hero-sm@2x.jpg);
+        }
+
+        @include mq(mob-only) {
+            background-image: var(--hero-gradient),
+                    url(../images/hero/hero-md.jpg);
+                    background-size: cover;
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: var(--hero-gradient),
+            url(../images/hero/hero-md@2x.jpg);
+                        }
+        }
+
+
+        @include mq(tab) {
+            background-image: var(--hero-gradient),
+            url(../images/hero/hero-lg.jpg);
+            background-size: cover;
+        
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: var(--hero-gradient),
+            url(../images/hero/hero-lg@2x.jpg);
+                     }
+                 }
+
+
+}

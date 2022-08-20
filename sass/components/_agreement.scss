@@ -1,0 +1,44 @@
+.agreement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    cursor: pointer;
+
+    &__text {
+            font-size: 14px;
+            line-height: calc(24 / 14);
+            letter-spacing: 0.03em;
+    
+            user-select: none;
+            text-underline-position: under;
+        }
+    
+        &__link {
+            color: var(--accent-cl);
+        }
+    
+        &__icon--uncheck {
+            transition: fill var(--animation);
+        }
+    
+        &__icon--check {
+            opacity: 0;
+            transition: opacity var(--animation);
+        }
+    
+        &__checkbox:checked+&__icon &__icon--uncheck {
+            opacity: 0;
+            transition: opacity var(--animation);
+        }
+    
+        &__checkbox:focus+&__icon &__icon--uncheck,
+        &__checkbox:hover+&__icon &__icon--uncheck {
+            fill: var(--accent-cl);
+        }
+    
+        &__checkbox:checked+&__icon &__icon--check {
+            opacity: 1;
+        }
+}
