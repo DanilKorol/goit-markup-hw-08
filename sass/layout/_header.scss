@@ -43,14 +43,14 @@
            
         }
 
-        @include mq(desk) {
-            display: flex;
-            gap: 50px;
-            margin-left: auto;
-            font-size: 14px;
-            line-height: calc(16 / 14);
-            align-items: center;
-        }
+        // @include mq(desk) {
+        //     display: flex;
+        //     gap: 50px;
+        //     margin-left: auto;
+        //     font-size: 14px;
+        //     line-height: calc(16 / 14);
+        //     align-items: center;
+        // }
             // display: flex;
             // align-items: center;
             // gap: 50px;
