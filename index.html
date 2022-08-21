@@ -27,163 +27,123 @@
     <!-- Header section  -->
     <header class="header">
       <div class="container header__container">
-        <a class="logo header__logo link" href="" lang="en"
-          >Web<span class="logo__text--upper">Studio</span>
-        </a>
+        <div class="header__mobile header--flex">
+          <a class="logo header__logo link" href="" lang="en"
+            >Web<span class="logo__text--upper">Studio</span>
+          </a>
 
-        <!-- Mobile menu -->
-
-        <button
-          type="button"
-          class="menu-button"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-          data-menu-button
-        >
-          <svg
-            class="menu-icon"
-            width="40"
-            height="40"
-            aria-label="Перемикач мобільного меню"
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
             aria-controls="mobile-menu"
+            data-menu-button
           >
-            <use
-              class="burger-icon"
-              href="./images/icons.svg#burger-icon"
-            ></use>
-            <use
-              class="close-mobile"
-              href="./images/icons.svg#close-mobile"
-            ></use>
-          </svg>
-        </button>
+            <svg
+              width="40"
+              height="40"
+              aria-label="Перемикач мобільного меню"
+              aria-controls="mobile-menu"
+            >
+              <use
+                class="menu-button__burger-icon"
+                href="./images/icons.svg#burger-icon"
+              ></use>
+              <use
+                class="menu-button__close-mobile"
+                href="./images/icons.svg#close-mobile"
+              ></use>
+            </svg>
+          </button>
 
-        <!-- Mobile modal  -->
+          <div class="mobile-menu" id="mobile-menu" data-menu>
+            <nav class="nav nav--margin-left">
+              <ul class="list nav__list">
+                <li class="nav__item">
+                  <a class="link nav__link" href="./index.html">Студия </a>
+                </li>
+                <li class="nav__item">
+                  <a
+                    class="link nav__link nav__link--current-page"
+                    href="./portfolio.html"
+                    >Портфолио
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a class="link nav__link" href="">Контакты</a>
+                </li>
+              </ul>
+            </nav>
 
-        <div class="mobile-menu" id="mobile-menu" data-menu>
-          <nav class="nav">
-            <ul class="list nav__list">
-              <li class="nav__item">
-                <a
-                  class="link nav__link nav__link--current-page"
-                  href="./index.html"
-                  >Студия
-                </a>
-              </li>
-              <li class="nav__item">
-                <a class="link nav__link" href="./portfolio.html">Портфолио </a>
-              </li>
-              <li class="nav__item">
-                <a class="link nav__link" href="">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-
-          <div class="menu-bottom">
             <ul class="list header__contact-list">
-              <li class="header__item">
-                <a class="link header__contact-link" href="tel:+380961111111">
-                  +38 096 111 11 11
-                </a>
-              </li>
-              <li class="header__item">
+              <li class="header__contact-item">
                 <a
                   class="link header__contact-link"
                   href="mailto:info@devstudio.com"
-                  >info@devstudio.com
+                >
+                  <svg class="header__icon" width="16" height="12">
+                    <use href="./images/icons.svg#envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="header__contact-item">
+                <a class="link header__contact-link" href="tel:+380961111111">
+                  <svg class="header__icon" width="10" height="16">
+                    <use href="./images/icons.svg#phone"></use>
+                  </svg>
+                  +38 096 111 11 11
                 </a>
               </li>
             </ul>
 
-            <ul class="social-list list">
-              <li class="social-list__item">
+            <ul class="mobile-social list">
+              <li class="mobile-social__list">
                 <a
                   href=""
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="social-list__link link"
+                  class="mobile-social__link link"
                   aria-label="Instagram"
                 >
-                  <span class="social-list__desc">Instagram</span>
+                  Instagram
                 </a>
               </li>
-              <li class="social-list__item">
+              <li class="mobile-social__list">
                 <a
                   href=""
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="social-list__link link"
+                  class="mobile-social__link link"
                   aria-label="Twitter"
                 >
-                  <span class="social-list__desc">Twitter</span></a
+                  Twitter</a
                 >
               </li>
-              <li class="social-list__item">
+              <li class="mobile-social__list">
                 <a
                   href=""
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="social-list__link link"
+                  class="mobile-social__link link"
                   aria-label="Facebook"
                 >
-                  <span class="social-list__desc">Facebook</span></a
+                  Facebook</a
                 >
               </li>
-              <li class="social-list__item link">
+              <li class="mobile-social__list">
                 <a
                   href=""
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="social-list__link link"
+                  class="mobile-social__link link"
                   aria-label="LinkedIn"
                 >
-                  <span class="social-list__desc">LinkedIn</span></a
+                  LinkedIn</a
                 >
               </li>
             </ul>
           </div>
-        </div>
-
-        <!-- Main menu -->
-        <div class="menu">
-          <nav class="nav">
-            <ul class="list nav__list">
-              <li class="nav__item">
-                <a
-                  class="link nav__link nav__link--current-page"
-                  href="./index.html"
-                  >Студия
-                </a>
-              </li>
-              <li class="nav__item">
-                <a class="link nav__link" href="./portfolio.html">Портфолио </a>
-              </li>
-              <li class="nav__item">
-                <a class="link nav__link" href="">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-          <ul class="list header__contact-list">
-            <li class="header__item">
-              <a
-                class="link header__contact-link"
-                href="mailto:info@devstudio.com"
-              >
-                <svg class="header__icon" width="16" height="12">
-                  <use href="./images/icons.svg#envelope"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="header__item">
-              <a class="link header__contact-link" href="tel:+380961111111">
-                <svg class="header__icon" width="10" height="16">
-                  <use href="./images/icons.svg#phone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
         </div>
       </div>
     </header>

@@ -1,24 +1,46 @@
 .header {
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    // font-weight: 500;
+    // line-height: 1.14;
+    // letter-spacing: 0.02em;
+    position: relative;
 
     border-bottom: 1px solid var(--border-cl);
 
-    &__container {
+    // &__container {
+    //         display: flex;
+    //         align-items: center;
+    //     }
+
+    &__mobile {
+        @include mq(mob-only) {
+            min-height: 60px;
             display: flex;
             align-items: center;
+            justify-content: space-between;
         }
+    }    
 
     &__contact-list {
+        display: flex;
+
         @include mq(mob-only) {
-            margin-bottom: 64px;
+            // margin-bottom: 64px;
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            gap: 32px;
+            margin-top: auto;
         }
 
         @include mq(tab-only) {
+           
+           flex-direction: column;
+           gap: 10px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.02em;
             margin-left: auto;
-            font-size: 12px;
-            line-height: calc(14 / 12);
+           
         }
 
         @include mq(desk) {
@@ -48,30 +70,49 @@
         }
     }            
      
-    &__item:last-child {
+    &__contact-item:last-child {
 
-        @include mq(mob-only) {
-            font-size: 24px;
-            line-height: calc(28 / 24);
+        @include mq(desk) {
+            margin-left: 50px;
         }
+
+        // @include mq(mob-only) {
+        //     font-size: 24px;
+        //     line-height: calc(28 / 24);
+        // }
     }
 
     &__contact-link {
            
-         transition: color var(--animation);
+        display: inline-flex;
+        align-items: center;
+        color: var(--grey-text-cl);
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.16;
+        letter-spacing: 0.02em;
+         
+        transition: color var(--animation);
 
-            @include mq(tab-only) {
-                display: flex;
-                align-items: center;
-                gap: 8px;
+            // @include mq(tab-only) {
+            //     display: flex;
+            //     align-items: center;
+            //     gap: 8px;
+            // }
+
+            @include mq(tab) {
+                font-size: 12px;
             }
 
             @include mq(desk) {
-                display: flex;
-                position: relative;
-                align-items: center;
-                padding-top: 32px;
-                padding-bottom: 32px;
+
+                font-size: 16px;
+
+                // display: flex;
+                // position: relative;
+                // align-items: center;
+                // padding-top: 32px;
+                // padding-bottom: 32px;
             }
                 }
         
@@ -86,14 +127,29 @@
                 }
         
     &__icon {
-            margin-right: 10px;
+
+            display: none;
+
+        @include mq(tab) {
+
+            display: block;
+             margin-right: 10px;
             fill: currentColor;
+            }
+
                 }
 }
 
 .menu {
     @include mq(mob-only) {
         display: none;
+    }
+}
+
+.header--flex {
+    @include mq(tab) {
+        display: flex;
+        align-items: center;
     }
 }
 
