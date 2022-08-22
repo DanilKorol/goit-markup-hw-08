@@ -140,11 +140,11 @@
                 }
 }
 
-.menu {
-    @include mq(mob-only) {
-        display: none;
-    }
-}
+// .menu {
+//     @include mq(mob-only) {
+//         display: none;
+//     }
+// }
 
 .header--flex {
     @include mq(tab) {

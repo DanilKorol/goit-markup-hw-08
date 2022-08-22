@@ -287,6 +287,12 @@ img {
   -webkit-transition: opacity var(--animation), visibility var(--animation);
   transition: opacity var(--animation), visibility var(--animation);
 }
+@media (max-width: 767.98px) {
+  .backdrop {
+    overflow-y: scroll;
+    padding: 93px 15px;
+  }
+}
 .backdrop--is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -295,8 +301,7 @@ img {
 
 .modal {
   position: absolute;
-  min-width: 528px;
-  min-height: 581px;
+  max-height: 609px;
   top: 50%;
   left: 50%;
   padding: 40px;
@@ -310,6 +315,18 @@ img {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    max-width: 450px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    max-height: 581px;
+  }
 }
 .modal__btn {
   position: absolute;
@@ -420,10 +437,15 @@ img {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--black-text-cl);
+}
+@media screen and (min-width: 1200px) {
+  .register-form__title {
+    line-height: 1.15;
+  }
 }
 .register-form__group {
   margin-bottom: 20px;
@@ -549,14 +571,20 @@ img {
   cursor: pointer;
 }
 .agreement__text {
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   text-underline-position: under;
+}
+@media screen and (min-width: 1200px) {
+  .agreement__text {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 .agreement__link {
   color: var(--accent-cl);
@@ -968,12 +996,6 @@ img {
     display: block;
     margin-right: 10px;
     fill: currentColor;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .menu {
-    display: none;
   }
 }
 
