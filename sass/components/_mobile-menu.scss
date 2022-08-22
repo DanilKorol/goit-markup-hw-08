@@ -15,6 +15,8 @@
         align-items: flex-start;
         transform: translateX(0);
         opacity: 1;
+        overflow: auto;
+        gap: 64px;
       }
 
       @include mq(mob-only) {
@@ -130,7 +132,7 @@
      @include mq(mob-only) {
         
         display: flex;
-        margin-top: 64px;
+        // margin-top: 64px;
 
         // flex-wrap: wrap;
         // align-items: center;

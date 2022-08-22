@@ -19,6 +19,10 @@
                 line-height: calc(24 / 14);
             }
         }
+
+        &__icon {
+            flex-shrink: 0;
+        }
     
         &__link {
             color: var(--accent-cl);

@@ -57,6 +57,7 @@
 
     &__link--current-page {
         color: var(--accent-cl);
+        position: relative;
     }
 
     &__link--current-page::after {
@@ -82,11 +83,11 @@
 .nav--margin-left {
     margin-left: 0;
 
-    @include mq(tab) {
-        margin-left: 88px;
-    }
+    // @include mq(tab) {
+    //     margin-left: 88px;
+    // }
 
-    @include mq(desk) {
-        margin-left: 92px;
-    }
+    // @include mq(desk) {
+    //     margin-left: 92px;
+    // }
 }

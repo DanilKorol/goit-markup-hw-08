@@ -36,8 +36,8 @@
            flex-direction: column;
            gap: 10px;
             font-weight: 500;
-            font-size: 14px;
-            line-height: 1.14;
+            font-size: 12px;
+            line-height: 1.16;
             letter-spacing: 0.02em;
             margin-left: auto;
            
@@ -117,9 +117,9 @@
                 }
         
         
-    // &__logo {
-    //         margin-right: 93px;
-    //             }
+    &__logo {
+            margin-right: 93px;
+                }
         
     &__contact-link:hover,
     &__contact-link:focus {
